@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/df7ad84bd9.js"></script>
+    <script src='./src/main.js'></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body class="amz-default">
+<div class="main">
+    <nav class="navigation">
+        <div class="navigation-content">
+            <div class="navigation-logo">
+                <div class="navigation-logo_item">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="navigation-content-data">
+                <span class="navigation-content-data_item">Menu Item 1</span>
+                <span class="navigation-content-data_item">Menu Item 2</span>
+                <span class="navigation-content-data_item">Menu Item 3</span>
+                <span class="navigation-content-data_item">Menu Item 4</span>
+            </div>
+            <div class="navigation-action">
+                <span class="navigation-action_btn">LOG IN / SIGN UP</button>
+            </div>
+        </div>
+    </nav>
+    <section class="search-box">
+        <form class="search-box-content">
+            <div class="search-box-group">
+                <input class="search-box-control"
+                    name="arrLength"
+                    type="number"
+                    min="1"
+                    max="100"
+                    placeholder=" "
+                />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="search-box-lbl" for="arrLength">Length</label>
+            </div>
+            <div class="search-box-group">
+                <input class="search-box-control"
+                    name="queueLimit"
+                    min="1"
+                    max="10"
+                    type="number"
+                    placeholder=" "
+                />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="search-box-lbl" for="queueLimit">Limit</label>
+            </div>
+            <button 
+                id="startBtn"
+                class="search-box-action"
+                type="button"
+                onclick="handleBtn()"
+                disabled>
+                Start
+            </button>
+        </form>  
+    </section>
+    <section class="content">
+        <div class="content-data" id="content">
+            <span class="content-counter" id="blocks-counter">Processed 0 of 0</span>
+        <!-- async blocks goes here -->
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="footer-content-item">
+                <h3 class="footer-content-item__header">Menu 1</h3>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Menu Item 1</a>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Menu Item 2</a>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Menu Item 3</a>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Menu Item 4</a>
+            </div>
+            <div class="footer-content-item">
+                <h3 class="footer-content-item__header">Menu 2</h3>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Menu Item 1</a>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Menu Item 2</a>
+            </div>
+            <div class="footer-content-item">
+                <h3 class="footer-content-item__header">Contacts</h3>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Phone</a>
+                <a href="#/some/internal/rooute" class="footer-content-item__action">Email</a>
+            </div>
+            <div class="footer-content-item footer-content-item__reverse">
+                <span class="footer-copyright-data">@ Lev Tolstoy</span>
+            </div>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

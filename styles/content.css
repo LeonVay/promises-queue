@@ -1,0 +1,62 @@
+@import "common.css";
+
+.content {
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.content-data {
+    max-width: 1000px;
+    min-width: 320px;
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.content-counter {
+    display: block;
+    position: fixed;
+    color: #2196F3;
+    margin: 8px;
+    background-color: rgba(255,255,255,0.9);
+    left: 45%;
+}
+
+.content-item {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 8px;
+    flex: 1 1 30%;
+    min-width: 304px;
+}
+
+.content-item-header {
+    font-size: 14px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    animation: fadein 2s;
+}
+
+.content-item-data {
+    font-size: 16px;
+    font-weight: 400;
+    animation: fadein 4s;
+}
+
+.content-item:nth-child(3n-5) {
+    padding-left: 0px;
+}
+.content-item:nth-child(3n) {
+    padding-right: 0px;
+}

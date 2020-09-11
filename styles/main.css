@@ -1,0 +1,12 @@
+@import "fonts.css";
+@import "navigation.css";
+@import "footer.css";
+@import "common.css";
+@import "search.css";
+@import "content.css";
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
